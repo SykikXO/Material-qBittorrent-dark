@@ -44,11 +44,7 @@ bash scripts/compile.sh
 ```
 The resulting `Material-Dark.qbtheme` will be generated in the project root.
 
-## Features
-- **Dynamic Recoloring:** Icons are automatically recolored during the build process to match your chosen scheme.
-- **Material Design Icons:** Full replacement of legacy icons with modern Material Symbols.
-- **High Contrast:** Carefully tuned color palettes for optimal readability in dark environments.
-- **Custom UI Components:** Styled scrollbars, menus, tabs, and tables for a unified experience.
+
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
