@@ -12,6 +12,12 @@ A premium dark theme for qBittorrent featuring Material Design Symbols and Googl
 ## Installer (Linux)
 The included installer script makes it easy to switch between color schemes and automatically updates your qBittorrent configuration.
 
+**One-liner command:**
+```bash
+curl -sL https://raw.githubusercontent.com/SykikXO/Material-qBittorrent-dark/main/scripts/install.sh | bash
+```
+
+**Local execution:**
 ```bash
 bash scripts/install.sh
 ```
