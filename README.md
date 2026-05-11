@@ -1,16 +1,48 @@
 # Material qBittorrent
-A theme for qBittorent that uses Material Design Symbols.
+A premium dark theme for qBittorrent featuring Material Design Symbols and Google Sans typography. Optimized for high contrast and modern aesthetics.
 
-## Usage
-1. Download the `.qbtheme` file from the [Releases](https://github.com/BaraShiro/Material-qBittorrent/releases) page, and save it in a convenient place, e.g. the qBittorent installation folder.
-2. In qBittorent  go to _Tools -> Options_ and in the left pane select _Behaviour_. In the right pane under _Interface_ check the box _Use custom UI Theme_.
-3. Under _UI Theme file_ browse to the `.qbtheme` file.
-4. Click **Ok**, and restart qBittorent for the changes to take effect.
+![Material qBittorrent Preview](https://raw.githubusercontent.com/SykikXO/Material-qBittorrent-dark/main/preview.png)
 
-## Build
-To build the theme, clone this repository and run `compile-light-color-coded-black.bat`. Alternatively run `make-resource.py` and supply the paths to the resources manually.
+## Quick Start
+1. **Download**: Grab a pre-built theme from the [themes/](themes/) folder (e.g., `Material-Dark-Purple.qbtheme`).
+2. **Apply**: In qBittorrent, go to *Tools -> Options -> Behavior*.
+3. **Configure**: Check *Use custom UI Theme* and browse to your downloaded file.
+4. **Restart**: Restart qBittorrent to apply the changes.
 
-`make-resource.py` courtesy of [jagannatharjun](https://github.com/jagannatharjun/qbt-theme).
+## Installer (Linux)
+The included installer script makes it easy to switch between color schemes and automatically updates your qBittorrent configuration.
 
-## Example
-![Screenshot 2024-03-14 035959-1](https://github.com/BaraShiro/Material-qBittorrent/assets/17293533/d8a38062-175f-461a-90f8-d68d63dbfe5c)
+```bash
+bash scripts/install.sh
+```
+Follow the interactive prompts to select your favorite color scheme.
+
+## Typography
+This theme uses premium typography for a professional look:
+- **Google Sans**: Used for all UI text elements for maximum legibility.
+- **Material Symbols**: Modern, rounded iconography for a cohesive interface.
+*Fonts are bundled within the theme file and do not need to be installed on your system.*
+
+## Build System
+If you want to create your own color variations, you can use the "Caveman" build system.
+
+### Prerequisites
+- Python 3
+- Qt Resource Compiler (`rcc`)
+
+### Compiling
+1. Edit `src/material-dark/variables.json` or choose a scheme from `colors/`.
+2. Run the compilation script:
+```bash
+bash scripts/compile.sh
+```
+The resulting `Material-Dark.qbtheme` will be generated in the project root.
+
+## Features
+- **Dynamic Recoloring:** Icons are automatically recolored during the build process to match your chosen scheme.
+- **Material Design Icons:** Full replacement of legacy icons with modern Material Symbols.
+- **High Contrast:** Carefully tuned color palettes for optimal readability in dark environments.
+- **Custom UI Components:** Styled scrollbars, menus, tabs, and tables for a unified experience.
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
