@@ -1,0 +1,2 @@
+#!/bin/bash
+python3 make-resource.py -find-files -config src/light-color-coded-black/config.json -icons-dir src/light-color-coded-black/icons -style src/light-color-coded-black/style.qss -output Material-light-color-coded-black

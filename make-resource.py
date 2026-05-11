@@ -74,7 +74,28 @@ with open('resources.qrc', 'w') as rcc:
     rcc.write('</RCC>')
 
 
-cmd = [os.path.join(os.path.dirname(os.path.realpath(__file__)), 'tools/rcc'), '-binary', '-o', args.output, 'resources.qrc']
+import platform
+is_windows = platform.system() == 'Windows'
+
+rcc_bin = None
+local_base = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'tools/rcc')
+
+if is_windows:
+    if os.path.exists(local_base): rcc_bin = local_base
+    elif os.path.exists(local_base + '.exe'): rcc_bin = local_base + '.exe'
+
+if not rcc_bin:
+    import shutil
+    rcc_bin = shutil.which('rcc') or shutil.which('rcc-qt5') or shutil.which('rcc-qt6')
+
+if not rcc_bin and not is_windows:
+    if os.path.exists(local_base): rcc_bin = local_base
+
+if not rcc_bin:
+    print("Error: rcc not found.")
+    sys.exit(1)
+
+cmd = [rcc_bin, '-binary', '-o', args.output, 'resources.qrc']
 print(' '.join(cmd))
 
 if not subprocess.call(cmd):
