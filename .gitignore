@@ -1,0 +1,7 @@
+# Build artifacts
+*.qbtheme
+!themes/
+!themes/*.qbtheme
+*.qrc
+__pycache__/
+*.exe
