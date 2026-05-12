@@ -46,5 +46,9 @@ The resulting `Material-Dark.qbtheme` will be generated in the project root.
 
 
 
+
+## AI Disclosure
+This repository was developed and maintained with the assistance of AI tools.
+
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
