@@ -1,7 +1,35 @@
 # Material qBittorrent
 A premium dark theme for qBittorrent featuring Material Design Symbols and Google Sans typography. Optimized for high contrast and modern aesthetics.
 
-![Material qBittorrent Preview](https://raw.githubusercontent.com/SykikXO/Material-qBittorrent-dark/main/preview.png)
+<h1 align="center">
+  <img src="https://raw.githubusercontent.com/SykikXO/Material-qBittorrent-dark/main/previews/2026-05-12_05-37-24.avif" alt="Material qBittorrent Preview" width="100%"/>
+</h1>
+
+## Screenshots
+
+<table>
+  <tr>
+    <td><img src="https://raw.githubusercontent.com/SykikXO/Material-qBittorrent-dark/main/previews/2026-05-12_05-37-24.avif" width="100%"/></td>
+    <td><img src="https://raw.githubusercontent.com/SykikXO/Material-qBittorrent-dark/main/previews/2026-05-12_05-38-07.avif" width="100%"/></td>
+    <td><img src="https://raw.githubusercontent.com/SykikXO/Material-qBittorrent-dark/main/previews/2026-05-12_05-39-21.avif" width="100%"/></td>
+    <td><img src="https://raw.githubusercontent.com/SykikXO/Material-qBittorrent-dark/main/previews/2026-05-12_05-40-00.avif" width="100%"/></td>
+  </tr>
+  <tr>
+    <td><img src="https://raw.githubusercontent.com/SykikXO/Material-qBittorrent-dark/main/previews/2026-05-12_05-40-32.avif" width="100%"/></td>
+    <td><img src="https://raw.githubusercontent.com/SykikXO/Material-qBittorrent-dark/main/previews/2026-05-12_05-52-16.avif" width="100%"/></td>
+    <td><img src="https://raw.githubusercontent.com/SykikXO/Material-qBittorrent-dark/main/previews/2026-05-12_05-52-46.avif" width="100%"/></td>
+    <td><img src="https://raw.githubusercontent.com/SykikXO/Material-qBittorrent-dark/main/previews/2026-05-12_05-53-24.avif" width="100%"/></td>
+  </tr>
+  <tr>
+    <td><img src="https://raw.githubusercontent.com/SykikXO/Material-qBittorrent-dark/main/previews/2026-05-12_05-53-48.avif" width="100%"/></td>
+    <td><img src="https://raw.githubusercontent.com/SykikXO/Material-qBittorrent-dark/main/previews/2026-05-12_05-54-26.avif" width="100%"/></td>
+    <td><img src="https://raw.githubusercontent.com/SykikXO/Material-qBittorrent-dark/main/previews/2026-05-12_05-55-24.avif" width="100%"/></td>
+    <td><img src="https://raw.githubusercontent.com/SykikXO/Material-qBittorrent-dark/main/previews/2026-05-12_05-56-09.avif" width="100%"/></td>
+  </tr>
+  <tr>
+    <td colspan="4" align="center"><img src="https://raw.githubusercontent.com/SykikXO/Material-qBittorrent-dark/main/previews/2026-05-12_05-56-29.avif" width="100%"/></td>
+  </tr>
+</table>
 
 ## Quick Start
 1. **Download**: Grab a pre-built theme from the [themes/](themes/) folder (e.g., `Material-Dark-Purple.qbtheme`).
@@ -27,6 +55,7 @@ Follow the interactive prompts to select your favorite color scheme.
 This theme uses premium typography for a professional look:
 - **Google Sans**: Used for all UI text elements for maximum legibility.
 - **Material Symbols**: Modern, rounded iconography for a cohesive interface.
+
 *Fonts are bundled within the theme file and do not need to be installed on your system.*
 
 ## Build System
