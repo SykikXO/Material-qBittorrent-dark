@@ -1,4 +1,4 @@
-import os
+import re
 from pathlib import Path
 
 # Mapping of filenames (without extension) to their theme variable
@@ -56,14 +56,10 @@ def update_icons():
         file_path = all_icons[filename]
         content = file_path.read_text(encoding='utf-8')
         
-        # Add or update fill attribute on the SVG tag or Path
-        if 'fill=' in content:
-            # Replace existing fills (simplified)
-            import re
-            content = re.sub(r'fill="[^"]+"', f'fill="{var}"', content)
-        else:
-            # Add fill to the svg tag if not present
-            content = content.replace('<svg ', f'<svg fill="{var}" ')
+        # Only set/update fill on the root <svg> tag, preserving child path colors
+        content = re.sub(r'(<svg\b[^>]*?)fill="[^"]*"', rf'\1fill="{var}"', content, count=1)
+        if 'fill="' not in content[:content.index('>')]:
+            content = content.replace('<svg ', f'<svg fill="{var}" ', 1)
             
         file_path.write_text(content, encoding='utf-8')
         print(f"Updated {name}.svg with {var}")

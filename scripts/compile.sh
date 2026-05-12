@@ -9,7 +9,11 @@ if ! command -v python3 &> /dev/null; then
     exit 1
 fi
 
-chmod +x scripts/make-resource.py
+# Auto-download fonts if missing
+if ! ls src/material-dark/fonts/*.ttf &>/dev/null; then
+    echo "Downloading fonts..."
+    python3 scripts/download_fonts.py
+fi
 
 python3 scripts/make-resource.py \
     -base-dir src/material-dark \

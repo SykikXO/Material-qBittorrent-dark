@@ -79,11 +79,23 @@ If you want to create your own color variations, you can use the "Caveman" build
 
 ### Prerequisites
 - Python 3
+- `requests` library (`pip install requests`)
 - Qt Resource Compiler (`rcc`)
+
+### Fonts
+Fonts are not stored in the repository. They are downloaded automatically by
+`scripts/download_fonts.py` when you run the build (or manually):
+```bash
+python3 scripts/download_fonts.py
+```
+- **Material Symbols** (Apache 2.0) — downloaded from Google's GitHub.
+- **Google Sans** (proprietary) — not publicly downloadable. Place the TTF files
+  manually in `src/material-dark/fonts/`, or remove `"Google Sans"` from
+  `FONT_FAMILY` in `variables.json` to use the fallback (Inter/Roboto).
 
 ### Compiling
 1. Edit `src/material-dark/variables.json` or choose a scheme from `colors/`.
-2. Run the compilation script:
+2. Run the compilation script (this also downloads fonts if missing):
 ```bash
 bash scripts/compile.sh
 ```

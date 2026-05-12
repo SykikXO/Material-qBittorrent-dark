@@ -1,0 +1,15 @@
+# Font Licensing
+
+## Google Sans
+Google Sans is a proprietary font by Google Inc.
+- https://fonts.google.com/specimen/Google+Sans
+License: Proprietary — not publicly downloadable.
+Place TTF files in this directory manually, or remove "Google Sans"
+from FONT_FAMILY in variables.json to use fallback fonts.
+
+## Material Symbols
+Material Symbols are licensed under the Apache License, Version 2.0.
+- https://github.com/google/material-design-icons
+- https://fonts.google.com/icons
+License: Apache 2.0
+Downloaded automatically by scripts/download_fonts.py.

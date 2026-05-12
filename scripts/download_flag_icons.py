@@ -1,11 +1,10 @@
-import os
 import requests
 from pathlib import Path
 
 # Get list of flags from qBittorrent repo
 LIST_URL = "https://api.github.com/repos/qbittorrent/qBittorrent/contents/src/icons/flags"
 FLAG_SOURCE_URL = "https://hatscripts.github.io/circle-flags/flags/{code}.svg"
-FLAGS_DIR = Path("/home/sykik/Dev/Material-qBittorrent-dark/src/material-dark/icons/flags")
+FLAGS_DIR = Path(__file__).parent.parent / "src" / "material-dark" / "icons" / "flags"
 
 def download_flags():
     if not FLAGS_DIR.exists():

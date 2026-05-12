@@ -1,2 +1,15 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Source
+*.svg text diff
+*.qss text diff
+*.json text diff
+*.py text diff
+*.sh text diff
+
+# Binary
+*.qbtheme binary
+*.ttf binary
+*.avif binary
+*.png binary

@@ -5,3 +5,7 @@
 *.qrc
 __pycache__/
 *.exe
+
+# Downloaded fonts (see scripts/download_fonts.py)
+src/material-dark/fonts/*.ttf
+!src/material-dark/fonts/LICENSE
