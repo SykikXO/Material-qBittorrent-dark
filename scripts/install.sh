@@ -14,7 +14,28 @@ YELLOW='\033[1;33m'
 NC='\033[0m' # No Color
 
 # Paths
-PROJECT_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+if [[ "$0" == "bash" || "$0" == "sh" ]] || [ ! -f "$(dirname "$0")/install.sh" ]; then
+    # Running via curl or similar
+    REMOTE_MODE=true
+    PROJECT_ROOT=$(pwd) # Default, will be updated if cloning
+else
+    REMOTE_MODE=false
+    PROJECT_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+fi
+
+# Ensure we have the full repository if running remotely
+if [ "$REMOTE_MODE" = true ] && [ ! -d "$PROJECT_ROOT/colors" ]; then
+    echo -e "${YELLOW}Detected remote execution. Cloning repository to temporary directory...${NC}"
+    TEMP_DIR=$(mktemp -d)
+    if git clone --depth 1 https://github.com/SykikXO/Material-qBittorrent-dark.git "$TEMP_DIR" > /dev/null 2>&1; then
+        PROJECT_ROOT="$TEMP_DIR"
+        cd "$PROJECT_ROOT"
+    else
+        echo -e "${RED}Error: Failed to clone repository. Please ensure git is installed.${NC}"
+        exit 1
+    fi
+fi
+
 SCHEME_DIR="$PROJECT_ROOT/colors"
 VARS_FILE="$PROJECT_ROOT/src/material-dark/variables.json"
 BUILD_SCRIPT="$PROJECT_ROOT/scripts/compile.sh"
@@ -124,7 +145,7 @@ if [ -n "$1" ]; then
     fi
 else
     echo -ne "\n${YELLOW}Select a scheme (1-$num_schemes): ${NC}"
-    read choice
+    read choice < /dev/tty
     if [[ "$choice" =~ ^[0-9]+$ ]] && [ "$choice" -ge 1 ] && [ "$choice" -le "$num_schemes" ]; then
         selected_scheme=${schemes[$choice]}
     else
@@ -135,3 +156,8 @@ fi
 
 build_theme "$selected_scheme"
 install_theme "$selected_scheme"
+
+# Cleanup temp dir if created
+if [ -n "$TEMP_DIR" ] && [ -d "$TEMP_DIR" ]; then
+    rm -rf "$TEMP_DIR"
+fi
