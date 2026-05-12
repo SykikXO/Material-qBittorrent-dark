@@ -1,33 +1,49 @@
 # Material qBittorrent
 A premium dark theme for qBittorrent featuring Material Design Symbols and Google Sans typography. Optimized for high contrast and modern aesthetics.
 
-<h1 align="center">
-  <img src="https://raw.githubusercontent.com/SykikXO/Material-qBittorrent-dark/main/previews/2026-05-12_05-37-24.avif" alt="Material qBittorrent Preview" width="100%"/>
-</h1>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/SykikXO/Material-qBittorrent-dark/main/previews/icon-banner.avif" alt="Material Icons & Typography" width="100%"/>
+</p>
 
 ## Screenshots
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/SykikXO/Material-qBittorrent-dark/main/previews/installer-script.avif" width="75%"/>
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/SykikXO/Material-qBittorrent-dark/main/previews/add-torrent-dialog.avif" width="75%"/>
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/SykikXO/Material-qBittorrent-dark/main/previews/torrent-content-selection.avif" width="75%"/>
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/SykikXO/Material-qBittorrent-dark/main/previews/settings.avif" width="75%"/>
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/SykikXO/Material-qBittorrent-dark/main/previews/speed-graph.avif" width="75%"/>
+</p>
+
+## Color Schemes
+
 <table>
   <tr>
-    <td><img src="https://raw.githubusercontent.com/SykikXO/Material-qBittorrent-dark/main/previews/2026-05-12_05-37-24.avif" width="100%"/></td>
-    <td><img src="https://raw.githubusercontent.com/SykikXO/Material-qBittorrent-dark/main/previews/2026-05-12_05-38-07.avif" width="100%"/></td>
-    <td><img src="https://raw.githubusercontent.com/SykikXO/Material-qBittorrent-dark/main/previews/2026-05-12_05-39-21.avif" width="100%"/></td>
-    <td><img src="https://raw.githubusercontent.com/SykikXO/Material-qBittorrent-dark/main/previews/2026-05-12_05-40-00.avif" width="100%"/></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/SykikXO/Material-qBittorrent-dark/main/previews/theme-purple.avif" width="100%"/></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/SykikXO/Material-qBittorrent-dark/main/previews/theme-blue.avif" width="100%"/></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/SykikXO/Material-qBittorrent-dark/main/previews/theme-catppuccin.avif" width="100%"/></td>
   </tr>
   <tr>
-    <td><img src="https://raw.githubusercontent.com/SykikXO/Material-qBittorrent-dark/main/previews/2026-05-12_05-40-32.avif" width="100%"/></td>
-    <td><img src="https://raw.githubusercontent.com/SykikXO/Material-qBittorrent-dark/main/previews/2026-05-12_05-52-16.avif" width="100%"/></td>
-    <td><img src="https://raw.githubusercontent.com/SykikXO/Material-qBittorrent-dark/main/previews/2026-05-12_05-52-46.avif" width="100%"/></td>
-    <td><img src="https://raw.githubusercontent.com/SykikXO/Material-qBittorrent-dark/main/previews/2026-05-12_05-53-24.avif" width="100%"/></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/SykikXO/Material-qBittorrent-dark/main/previews/theme-dracula.avif" width="100%"/></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/SykikXO/Material-qBittorrent-dark/main/previews/theme-green.avif" width="100%"/></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/SykikXO/Material-qBittorrent-dark/main/previews/theme-nord.avif" width="100%"/></td>
   </tr>
   <tr>
-    <td><img src="https://raw.githubusercontent.com/SykikXO/Material-qBittorrent-dark/main/previews/2026-05-12_05-53-48.avif" width="100%"/></td>
-    <td><img src="https://raw.githubusercontent.com/SykikXO/Material-qBittorrent-dark/main/previews/2026-05-12_05-54-26.avif" width="100%"/></td>
-    <td><img src="https://raw.githubusercontent.com/SykikXO/Material-qBittorrent-dark/main/previews/2026-05-12_05-55-24.avif" width="100%"/></td>
-    <td><img src="https://raw.githubusercontent.com/SykikXO/Material-qBittorrent-dark/main/previews/2026-05-12_05-56-09.avif" width="100%"/></td>
-  </tr>
-  <tr>
-    <td colspan="4" align="center"><img src="https://raw.githubusercontent.com/SykikXO/Material-qBittorrent-dark/main/previews/2026-05-12_05-56-29.avif" width="100%"/></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/SykikXO/Material-qBittorrent-dark/main/previews/theme-orange.avif" width="100%"/></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/SykikXO/Material-qBittorrent-dark/main/previews/theme-red.avif" width="100%"/></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/SykikXO/Material-qBittorrent-dark/main/previews/theme-rosepine.avif" width="100%"/></td>
   </tr>
 </table>
 
